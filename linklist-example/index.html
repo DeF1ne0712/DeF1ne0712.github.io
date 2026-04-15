@@ -19,12 +19,12 @@
   
     <meta name="keywords" content="hexo,theme,kratos-rebirth" />
   
-  <meta name="description" content="(() &#x3D;&gt; {               const flist &#x3D; [{&quot;title&quot;:&quot;Hexo&quot;,&quot;description&quot;:&quot;快速、简洁且高效的博客框架&quot;,&quot;image&quot;:&quot;https:&#x2F;&#x2F;hexo.io&#x2F;logo.svg&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;&quot;},{&quot;title&quot;:&quot;Kratos : Rebirth&quot;">
+  <meta name="description" content="(() &#x3D;&gt; {               const flist &#x3D; [{&quot;title&quot;:&quot;Luogu&quot;,&quot;description&quot;:&quot;计算机科学教育新生态&quot;,&quot;image&quot;:&quot;https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;favicon.ico&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;&quot;},{&quot;title&quot;:&quot;Code">
 <meta property="og:type" content="website">
 <meta property="og:title" content="链接列表（样例）">
 <meta property="og:url" content="https://def1ne0712.github.io/linklist-example/index.html">
 <meta property="og:site_name" content="DeF1ne&#39;s Blog">
-<meta property="og:description" content="(() &#x3D;&gt; {               const flist &#x3D; [{&quot;title&quot;:&quot;Hexo&quot;,&quot;description&quot;:&quot;快速、简洁且高效的博客框架&quot;,&quot;image&quot;:&quot;https:&#x2F;&#x2F;hexo.io&#x2F;logo.svg&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;&quot;},{&quot;title&quot;:&quot;Kratos : Rebirth&quot;">
+<meta property="og:description" content="(() &#x3D;&gt; {               const flist &#x3D; [{&quot;title&quot;:&quot;Luogu&quot;,&quot;description&quot;:&quot;计算机科学教育新生态&quot;,&quot;image&quot;:&quot;https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;favicon.ico&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;&quot;},{&quot;title&quot;:&quot;Code">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://def1ne0712.github.io/assets/favicon.png">
 <meta property="article:published_time" content="2025-09-30T14:43:02.000Z">
@@ -50,8 +50,6 @@
   <link rel="stylesheet" id="theme-light-css" href="/css/kr-theme/light.min.css" media="all">
   <link rel="stylesheet" id="theme-dark-css" href="/css/kr-theme/dark.min.css" media="(prefers-color-scheme: dark)">
   
-    <link rel="stylesheet"  id="highlight-css" href="/css/highlight/highlight.js/night-eighties.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/css/highlight/highlight.js/night-eighties.min.css"></noscript>
-  
   <script src="/js/kr-theme.min.js"></script>
   <link rel="stylesheet"  id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css"></noscript>
   
@@ -68,19 +66,19 @@
   <style>
     
       .kratos-cover.kratos-cover-2 {
-        background-image: url('https://dev.krt.moe/demo-assets/banner.webp');
+        background-image: url('');
       }
       html[data-theme="dark"] .kratos-cover.kratos-cover-2 {
-        background-image: url('https://dev.krt.moe/demo-assets/banner_dark.webp');
+        background-image: url('');
       }
     
     
       @media(min-width:768px) {
         body.custom-background {
-          background-image: url('https://dev.krt.moe/demo-assets/bg.webp');
+          background-image: url('/assets/nijika.jpg');
         }
         html[data-theme="dark"] body.custom-background {
-          background-image: url('https://dev.krt.moe/demo-assets/bg.webp');
+          background-image: url('/assets/nijika.jpg');
         }
       }
     
@@ -96,7 +94,17 @@
 
   <!-- 额外的追加注入项 -->
   
-<meta name="generator" content="Hexo 8.1.1"></head>
+    <!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<!-- Prism 代码高亮（必须） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+
+  
+<meta name="generator" content="Hexo 8.1.1"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
 
     <body class="custom-background">
         <div id="kratos-wrapper">
@@ -127,42 +135,8 @@
                                             
                                                 <i class="fa fa-file"></i>
                                             
-                                            档案馆
+                                            文章
                                         </a>
-                                        
-                                    </li>
-                                
-                                    <li>
-                                        
-                                            <a>
-                                        
-                                            
-                                                <i class="fa fa-link"></i>
-                                            
-                                            链接
-                                        </a>
-                                        
-                                            <ul class="sub-menu">
-                                                
-                                                    <li>
-                                                        <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">
-                                                            
-                                                                <i class="fa fa-code"></i>
-                                                            
-                                                            代码仓库
-                                                        </a>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <a target="_blank" rel="noopener" href="https://wiki.krt.moe">
-                                                            
-                                                                <i class="fa fa-book"></i>
-                                                            
-                                                            项目文档
-                                                        </a>
-                                                    </li>
-                                                
-                                            </ul>
                                         
                                     </li>
                                 
@@ -232,7 +206,7 @@
     <ul class="kr-linklist-container"></ul>
     <script type="text/javascript">
           (() => {
-              const flist = [{"title":"Hexo","description":"快速、简洁且高效的博客框架","image":"https://hexo.io/logo.svg","link":"https://hexo.io/zh-cn/"},{"title":"Kratos : Rebirth","description":"一个可爱而现代的 Hexo 主题","image":"https://avatars.githubusercontent.com/u/170786100","link":"https://krt.moe/"},{"title":"本地图片","description":"可以使用本地资源作为链接的图片","image":"/images/user.svg","link":"/"},{"title":"新标签页","description":"所有链接会在新标签页中打开","image":"/images/user.svg","link":"/"}];
+              const flist = [{"title":"Luogu","description":"计算机科学教育新生态","image":"https://www.luogu.com.cn/favicon.ico","link":"https://www.luogu.com.cn/"},{"title":"Codeforces","description":"Codeforces (c) Copyright 2010-2026 Mike Mirzayanov","image":"https://codeforces.com/favicon.ico","link":"https://codeforces.com/favicon"}];
               let friendNodes = '';
               while (flist.length > 0) {
                   const randID = Math.floor(Math.random()*flist.length);
@@ -252,7 +226,6 @@
           })();
           </script>
   </div>
-
 <div class="panel panel-info">
     <div class="panel-title"><i class="fa fa-info"></i>调整内容</div>
     <div class="panel-body">
@@ -273,8 +246,6 @@
             
             
                 <div class="post-actions text-center clearfix" id="post-actions">
-                
-                    <a class="donate" href="javascript:;" onclick="krOpenDonateModal()"><i class="fa fa-bitcoin"></i> 打赏</a>
                 
                 
                     <a class="share" href="javascript:;" onclick="krOpenShareModal()"><i class="fa fa-share-alt"></i> 分享</a>
@@ -306,7 +277,7 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/user.svg" alt="DeF1ne" loading="lazy" decoding="auto" />
+            <img class="about-photo" src="/assets/favicon.png" alt="DeF1ne" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
@@ -318,7 +289,7 @@
                 文章
             </span>
             <span class="count">
-                1
+                3
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -360,6 +331,18 @@
             
           
         
+          
+          
+            <a class="list-group-item" href="/posts/250818exam/"><i class="fa fa-book"></i> 2025-08-18 模拟考试 in Xinyoudui</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/250811exam/"><i class="fa fa-book"></i> 2025-08-11 模拟考试 in Xinyoudui</a>
+            
+          
+        
       </ul>
   </div>
   </aside>
@@ -383,14 +366,20 @@
                     <ul class="kratos-social-icons">
                         
                             <li>
-                                <a href="https://github.com/kratos-rebirth" target="_blank" rel="nofollow">
+                                <a href="https://github.com/DeF1ne0712/" target="_blank" rel="nofollow">
                                     <i class="fa fa-github"></i>
                                 </a>
                             </li>
                         
                             <li>
-                                <a href="/atom.xml" target="_blank" rel="nofollow">
-                                    <i class="fa fa-rss"></i>
+                                <a href="https://steamcommunity.com/id/2841418935/" target="_blank" rel="nofollow">
+                                    <i class="fa fa-steam"></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="tencent://message/?uin=2841418935&Site=Sambow&Menu=yes" target="_blank" rel="nofollow">
+                                    <i class="fa fa-qq"></i>
                                 </a>
                             </li>
                         
@@ -398,19 +387,143 @@
                     <ul class="kratos-copyright">
                         <div>
                             <li>&copy; 2026 DeF1ne's Blog 版权所有.</li>
-                            <li>本站已在风雨中飘摇<span id="kr-since">Loading...</span></li>
+                            <li>本站已运行<span id="kr-since">Loading...</span></li>
                         </div>
                         <div>
                             <li>自豪地使用 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a> 主题</li>
-                            <li>站点由 <a href="https://github.com/Candinya/Kratos-Rebirth/graphs/contributors" target="_blank">DeF1ne</a> 用 <i class="fa fa-heart" style="color:#d43f57"></i> 搭建</li>
+                            <li>站点由 DeF1ne 用 <i class="fa fa-heart" style="color:#d43f57"></i> 搭建</li>
                         </div>
                         <!-- 额外的追加注入项 -->
                         
                             <div>
                                 
-                                    <li>由 <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a> 强力驱动</li>
+                                    <li>© 2026 DeF1ne</li>
                                 
-                                    <li>在 <a href="https://github.io" target="_blank">Github Pages</a> 暖心托管</li>
+                            </div>
+                        
+                            <div>
+                                
+                                    <li>P</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li>w</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>r</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>d</li>
+                                
+                                    <li> </li>
+                                
+                                    <li>b</li>
+                                
+                                    <li>y</li>
+                                
+                                    <li> </li>
+                                
+                                    <li><</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li> </li>
+                                
+                                    <li>h</li>
+                                
+                                    <li>r</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>f</li>
+                                
+                                    <li>=</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li>h</li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>p</li>
+                                
+                                    <li>s</li>
+                                
+                                    <li>:</li>
+                                
+                                    <li>/</li>
+                                
+                                    <li>/</li>
+                                
+                                    <li>h</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>x</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li>.</li>
+                                
+                                    <li>i</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li> </li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li>r</li>
+                                
+                                    <li>g</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>=</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li>_</li>
+                                
+                                    <li>b</li>
+                                
+                                    <li>l</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li>n</li>
+                                
+                                    <li>k</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li>></li>
+                                
+                                    <li>H</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>x</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li><</li>
+                                
+                                    <li>/</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li>></li>
                                 
                             </div>
                         
@@ -441,40 +554,6 @@
 </footer>
 </div>
 </div>
-
-
-    <div id="kr-donate-modal" class="kr-modal">
-    <div class="kr-modal-bg" onclick="krCloseDonateModal()"></div>
-    <div class="kr-modal-content">
-        <div class="kr-modal-header">
-            <div class="kr-modal-icon">
-                <i class="fa fa-bitcoin"></i>
-            </div>
-            <div class="kr-modal-title">赞助喵</div>
-            <button class="kr-modal-close" onclick="krCloseDonateModal()">
-                <i class="fa fa-times-circle"></i>
-            </button>
-        </div>
-        <div class="kr-modal-body">
-            <div class="kr-donate-message">非常感谢您的喜欢！ <i class="fa fa-heart" style="color:#d43f57"></i></div>
-            <div class="kr-donate-qr" id="kr-donate-qr">
-                
-                    <img class="kr-donate-placeholder" src="https://dev.krt.moe/demo-assets/donate.webp" alt="赞助喵" />
-                
-            </div>
-            <div class="kr-donate-platforms">
-                
-                    
-                        <button class="kr-donate-platform-button" style="color: skyblue;" title="模拟支付" onclick="krDonateModalShowPlatformQR('example_payment', 'skyblue')">
-                            <i class="fa fa-credit-card"></i>
-                        </button>
-                    
-                
-            </div>
-        </div>
-    </div>
-</div>
-<script defer src="/js/kr-modal/donate.min.js"></script>
 
 
 

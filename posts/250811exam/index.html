@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+    <link rel="icon" href="/assets/favicon.png">
+  
+  
+  <title>2025-08-11 模拟考试 in Xinyoudui | DeF1ne&#39;s Blog</title>
+  <link rel="canonical" href="https://def1ne0712.github.io/posts/250811exam/">
+  <meta name="author" content="DeF1ne" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="大傻逼信友队直接照搬atcoder原题赶紧去死吧，T3T4这么难 タイムライン  8:00—8:15 看题 8:15—8:30 写T1 8:30—9:00 写T2 9:00—结束 看T3T4，想题   得分    题目 T1 T2 T3 T4     得分 100 AC 40 WA&amp;RE 0 0     错误原因   T2 思路想错，错误地使用邻接矩阵，   T3&amp;T4 思路错误，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2025-08-11 模拟考试 in Xinyoudui">
+<meta property="og:url" content="https://def1ne0712.github.io/posts/250811exam/index.html">
+<meta property="og:site_name" content="DeF1ne&#39;s Blog">
+<meta property="og:description" content="大傻逼信友队直接照搬atcoder原题赶紧去死吧，T3T4这么难 タイムライン  8:00—8:15 看题 8:15—8:30 写T1 8:30—9:00 写T2 9:00—结束 看T3T4，想题   得分    题目 T1 T2 T3 T4     得分 100 AC 40 WA&amp;RE 0 0     错误原因   T2 思路想错，错误地使用邻接矩阵，   T3&amp;T4 思路错误，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://def1ne0712.github.io/assets/favicon.png">
+<meta property="article:published_time" content="2025-08-11T10:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-15T15:07:39.371Z">
+<meta property="article:author" content="DeF1ne">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="kratos-rebirth">
+<meta property="article:tag" content="theme">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://def1ne0712.github.io/assets/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="DeF1ne's Blog" type="application/atom+xml">
+  
+  <!-- JSON-LD 结构化数据 -->
+  
+  
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BlogPosting","headline":"2025-08-11 模拟考试 in Xinyoudui","description":"大傻逼信友队直接照搬atcoder原题赶紧去死吧，T3T4这么难\nタイムライン\n\n8:00—8:15 看题\n8:15—8:30 写T1\n8:30—9:00 写T2\n9...","image":"https://def1ne0712.github.io/assets/favicon.png","author":{"@type":"Person","name":"DeF1ne"},"publisher":{"@type":"Organization","name":"DeF1ne's Blog","logo":{"@type":"ImageObject","url":"https://def1ne0712.github.io/assets/favicon.png"}},"datePublished":"2025-08-11T10:00:00.000Z","dateModified":"2026-04-15T15:07:39.371Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://def1ne0712.github.io/posts/250811exam/"}}
+    </script>
+  
+  <!-- 关键 CSS 预加载 -->
+  <link rel="preload" href="/css/kr-core.min.css" as="style" crossorigin>
+  <link rel="preload" href="/css/kr-theme/light.min.css" as="style" crossorigin>
+  <link rel="preload" href="/css/kr-theme/dark.min.css" as="style" crossorigin>
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kr-core.min.css" media="all">
+  <link rel="stylesheet" id="theme-light-css" href="/css/kr-theme/light.min.css" media="all">
+  <link rel="stylesheet" id="theme-dark-css" href="/css/kr-theme/dark.min.css" media="(prefers-color-scheme: dark)">
+  
+  <script src="/js/kr-theme.min.js"></script>
+  <link rel="stylesheet"  id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css"></noscript>
+  
+    <link rel="stylesheet"  id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/nprogress@0.2.0/nprogress.css"></noscript>
+  
+  
+    <link rel="stylesheet"  href="/vendors/viewerjs@1.11.6/dist/viewer.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/viewerjs@1.11.6/dist/viewer.min.css"></noscript>
+  
+  <!-- 预先加载的JS文件 -->
+  
+    <script src="/vendors/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.js"></script>
+  
+  <!-- 自定义站点横幅和背景 -->
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('');
+      }
+      html[data-theme="dark"] .kratos-cover.kratos-cover-2 {
+        background-image: url('');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/assets/nijika.jpg');
+        }
+        html[data-theme="dark"] body.custom-background {
+          background-image: url('/assets/nijika.jpg');
+        }
+      }
+    
+    
+      .widget-kratos-about .photo-background {
+        background-image: url('/images/default.webp');
+      }
+      html[data-theme="dark"] .widget-kratos-about .photo-background {
+        background-image: url('/images/default.webp');
+      }
+    
+  </style>
+
+  <!-- 额外的追加注入项 -->
+  
+    <!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<!-- Prism 代码高亮（必须） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+
+  
+<meta name="generator" content="Hexo 8.1.1"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    <li>
+                                        
+                                            <a href="/">
+                                        
+                                            
+                                                <i class="fa fa-home"></i>
+                                            
+                                            首页
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/archives/">
+                                        
+                                            
+                                                <i class="fa fa-file"></i>
+                                            
+                                            文章
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/linklist-example/">
+                                        
+                                            
+                                                <i class="fa fa-link"></i>
+                                            
+                                            链接列表
+                                        </a>
+                                        
+                                    </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">DeF1ne&#39;s Blog</a></div>
+                    <div id="kratos-nav-toggle-wrapper" class="nav-toggle">
+                        <a id="kratos-nav-toggle" class="kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>DeF1ne&#39;s Blog</h2> <br />
+                        <span>DeF1ne的博客</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+
+
+        
+
+            
+
+            <section class="kr-main-col col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://def1ne0712.github.io/posts/250811exam/">
+    <div class="kratos-hentry kratos-page-inner clearfix">
+        <header class="kratos-page-header">
+            
+                <h1 class="kratos-page-title text-center" itemprop="name headline">2025-08-11 模拟考试 in Xinyoudui</h1>
+            
+            <ul class="kratos-page-meta text-center">
+                <li><time datetime="2025-08-11T10:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-08-11</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">DeF1ne</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~3.39K
+                        
+                        字
+                    </li>
+                
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-page-content kr-post">
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3"><span class="toc-number">1.</span> <span class="toc-text">タイムライン</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%97%E5%88%86"><span class="toc-number">2.</span> <span class="toc-text">得分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0"><span class="toc-number">3.</span> <span class="toc-text">错误原因</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#t2"><span class="toc-number">3.1.</span> <span class="toc-text">T2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#t3-t4"><span class="toc-number">3.2.</span> <span class="toc-text">T3&amp;T4</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%E8%BF%99%E4%B8%80%E5%9D%97"><span class="toc-number">4.</span> <span class="toc-text">题解这一块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#t1-%E6%89%93%E7%BB%B3%E7%BB%93"><span class="toc-number">4.1.</span> <span class="toc-text">T1 打绳结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#code"><span class="toc-number">4.1.1.</span> <span class="toc-text">Code</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#t2-%E6%91%87%E6%9B%B3"><span class="toc-number">4.2.</span> <span class="toc-text">T2 摇曳</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#code"><span class="toc-number">4.2.1.</span> <span class="toc-text">Code</span></a></li></ol></li></ol></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><p>大傻逼信友队直接照搬atcoder原题赶紧去死吧，T3T4这么难</p>
+<h2 id="タイムライン">タイムライン</h2>
+<blockquote>
+<p>8:00—8:15 看题</p>
+<p>8:15—8:30 写T1</p>
+<p>8:30—9:00 写T2</p>
+<p>9:00—结束 看T3T4，想题</p>
+</blockquote>
+<hr>
+<h2 id="得分">得分</h2>
+<table>
+<thead>
+<tr>
+<th>题目</th>
+<th>T1</th>
+<th>T2</th>
+<th>T3</th>
+<th>T4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>得分</td>
+<td>100 AC</td>
+<td>40 WA&amp;RE</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="错误原因">错误原因</h2>
+<ul>
+<li>
+<h4 id="t2">T2</h4>
+<p>思路想错，错误地使用邻接矩阵，</p>
+</li>
+<li>
+<h4 id="t3-t4">T3&amp;T4</h4>
+<p>思路错误，想了好久没想出来</p>
+</li>
+</ul>
+<hr>
+<h2 id="题解这一块">题解这一块</h2>
+<h3 id="t1-打绳结">T1 打绳结</h3>
+<p>洛谷：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/AT_abc293_d">AT_abc293_d [ABC293D] Tying Rope</a></p>
+<p>可以直接把绳子看成点，形成环，环的数量+1，不成环的数量直接用n，反正后面用不到了，成一个环n就减1</p>
+<p>使用并查集</p>
+<h4 id="code">Code</h4>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">2e5</span><span class="number">+10</span>;  <span class="comment">// 最大绳子数量+余量</span></span><br><span class="line"><span class="type">int</span> n,m;             <span class="comment">// n=绳子数量，m=操作次数</span></span><br><span class="line"><span class="type">int</span> father[N];       <span class="comment">// 并查集父节点数组，用于维护连通集合</span></span><br><span class="line"><span class="type">int</span> ans=<span class="number">0</span>;           <span class="comment">// 用来统计环的数量（代码中试图实现）</span></span><br><span class="line"><span class="type">int</span> a,c;             <span class="comment">// 输入的两个绳子编号</span></span><br><span class="line"><span class="type">char</span> b,d;            <span class="comment">// 输入的两端颜色，&#x27;R&#x27; 或 &#x27;B&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 并查集查找函数，带路径压缩</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">findfather</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x == father[x])&#123;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> father[x] = <span class="built_in">findfather</span>(father[x]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    cin &gt;&gt; n &gt;&gt; m;  <span class="comment">// 读入绳子数和操作次数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 并查集初始化：每个节点自己是一个集合</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">        father[i] = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 对每条连接操作进行处理</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++)&#123;</span><br><span class="line">        cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;  </span><br><span class="line">        <span class="comment">// 读取输入：</span></span><br><span class="line">        <span class="comment">// a, b 表示绳子 a 的端点颜色 b (&#x27;R&#x27;或&#x27;B&#x27;)</span></span><br><span class="line">        <span class="comment">// c, d 表示绳子 c 的端点颜色 d (&#x27;R&#x27;或&#x27;B&#x27;)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 找出绳子 a 和绳子 c 对应的集合根节点</span></span><br><span class="line">        <span class="type">int</span> fa1 = <span class="built_in">findfather</span>(a);</span><br><span class="line">        <span class="type">int</span> fa2 = <span class="built_in">findfather</span>(c);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 非联通数量-1</span></span><br><span class="line">        n--;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果两端不在同一个集合，合并集合</span></span><br><span class="line">        <span class="keyword">if</span>(fa1 != fa2)&#123;</span><br><span class="line">            father[fa1] = fa2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 如果已经在同一个集合中，说明这条边形成了环，环数量加一</span></span><br><span class="line">            ans++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="t2-摇曳">T2 摇曳</h3>
+<p>考时想复杂了，其实就是dfs去遍历图</p>
+<p>遇到障碍时，找它的儿子，如果有两个儿子，直接把障碍清空，因为怎么挪都不影响最终结果，不如直接删掉</p>
+<p>如果只有一个，只能把障碍挪给那个儿子然后继续走</p>
+<p>如果没有儿子，则走不通，回溯</p>
+<h4 id="code">Code</h4>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">2e5</span><span class="number">+10</span>;</span><br><span class="line"><span class="type">int</span> n,k,ans,obs[N];</span><br><span class="line">vector&lt;<span class="type">int</span>&gt; a[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> fa)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(obs[u])&#123;</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; em;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(<span class="type">int</span>)a[u].<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">            <span class="type">int</span> v=a[u][i];</span><br><span class="line">            <span class="keyword">if</span>(v!=fa &amp;&amp; !obs[v])&#123;</span><br><span class="line">                em.<span class="built_in">push_back</span>(v);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(em.<span class="built_in">empty</span>())&#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(em.<span class="built_in">size</span>()==<span class="number">1</span>)&#123;</span><br><span class="line">            obs[em[<span class="number">0</span>]]=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        obs[u]=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(<span class="type">int</span>)a[u].<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">        <span class="type">int</span> v=a[u][i];</span><br><span class="line">        <span class="keyword">if</span>(v!=fa)&#123;</span><br><span class="line">            <span class="built_in">dfs</span>(v,u);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> fa)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(obs[u]==<span class="number">1</span>) <span class="keyword">return</span>;</span><br><span class="line">    ans++;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(<span class="type">int</span>)a[u].<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">        <span class="type">int</span> v=a[u][i];</span><br><span class="line">        <span class="keyword">if</span>(v!=fa)&#123;</span><br><span class="line">            <span class="built_in">count</span>(v,u);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;swaying.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">    <span class="built_in">freopen</span>(<span class="string">&quot;swaying.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">        <span class="type">int</span> u,v;</span><br><span class="line">        cin&gt;&gt;u&gt;&gt;v;</span><br><span class="line">        a[u].<span class="built_in">push_back</span>(v);</span><br><span class="line">        a[v].<span class="built_in">push_back</span>(u);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=k;i++)&#123;</span><br><span class="line">        <span class="type">int</span> x;</span><br><span class="line">        cin&gt;&gt;x;</span><br><span class="line">        obs[x]=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">dfs</span>(<span class="number">1</span>,<span class="number">-1</span>);</span><br><span class="line">    <span class="built_in">solve</span>(<span class="number">1</span>,<span class="number">-1</span>);</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <span itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</span>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            
+            
+                <div class="post-actions text-center clearfix" id="post-actions">
+                
+                
+                    <a class="share" href="javascript:;" onclick="krOpenShareModal()"><i class="fa fa-share-alt"></i> 分享</a>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2026-04-15T15:07:39.371Z" itemprop="dateModified">最后编辑：2026-04-15</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 2025-08-18 模拟考试 in Xinyoudui" href="/posts/250818exam/">下一篇 <i class="fa fa-angle-right"></i></a>
+            </div>
+            
+        </nav>
+    
+    
+        <div class="comment-post">
+            
+        </div>
+    
+</article>
+
+        
+
+            </section>
+
+            
+                
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/assets/favicon.png" alt="DeF1ne" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">DeF1ne</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                3
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3"><span class="toc-text">タイムライン</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%97%E5%88%86"><span class="toc-text">得分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0"><span class="toc-text">错误原因</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#t2"><span class="toc-text">T2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#t3-t4"><span class="toc-text">T3&amp;T4</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%E8%BF%99%E4%B8%80%E5%9D%97"><span class="toc-text">题解这一块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#t1-%E6%89%93%E7%BB%B3%E7%BB%93"><span class="toc-text">T1 打绳结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#code"><span class="toc-text">Code</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#t2-%E6%91%87%E6%9B%B3"><span class="toc-text">T2 摇曳</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#code"><span class="toc-text">Code</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+                
+                
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/posts/me/"><i class="fa fa-book"></i> About me</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/250818exam/"><i class="fa fa-book"></i> 2025-08-18 模拟考试 in Xinyoudui</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/250811exam/"><i class="fa fa-book"></i> 2025-08-11 模拟考试 in Xinyoudui</a>
+            
+          
+        
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+            
+
+        
+
+                </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                            <li>
+                                <a href="https://github.com/DeF1ne0712/" target="_blank" rel="nofollow">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://steamcommunity.com/id/2841418935/" target="_blank" rel="nofollow">
+                                    <i class="fa fa-steam"></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="tencent://message/?uin=2841418935&Site=Sambow&Menu=yes" target="_blank" rel="nofollow">
+                                    <i class="fa fa-qq"></i>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2026 DeF1ne's Blog 版权所有.</li>
+                            <li>本站已运行<span id="kr-since">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>自豪地使用 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a> 主题</li>
+                            <li>站点由 DeF1ne 用 <i class="fa fa-heart" style="color:#d43f57"></i> 搭建</li>
+                        </div>
+                        <!-- 额外的追加注入项 -->
+                        
+                            <div>
+                                
+                                    <li>© 2026 DeF1ne</li>
+                                
+                            </div>
+                        
+                            <div>
+                                
+                                    <li>P</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li>w</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>r</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>d</li>
+                                
+                                    <li> </li>
+                                
+                                    <li>b</li>
+                                
+                                    <li>y</li>
+                                
+                                    <li> </li>
+                                
+                                    <li><</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li> </li>
+                                
+                                    <li>h</li>
+                                
+                                    <li>r</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>f</li>
+                                
+                                    <li>=</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li>h</li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>p</li>
+                                
+                                    <li>s</li>
+                                
+                                    <li>:</li>
+                                
+                                    <li>/</li>
+                                
+                                    <li>/</li>
+                                
+                                    <li>h</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>x</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li>.</li>
+                                
+                                    <li>i</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li> </li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li>r</li>
+                                
+                                    <li>g</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>t</li>
+                                
+                                    <li>=</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li>_</li>
+                                
+                                    <li>b</li>
+                                
+                                    <li>l</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li>n</li>
+                                
+                                    <li>k</li>
+                                
+                                    <li>"</li>
+                                
+                                    <li>></li>
+                                
+                                    <li>H</li>
+                                
+                                    <li>e</li>
+                                
+                                    <li>x</li>
+                                
+                                    <li>o</li>
+                                
+                                    <li><</li>
+                                
+                                    <li>/</li>
+                                
+                                    <li>a</li>
+                                
+                                    <li>></li>
+                                
+                            </div>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                <!-- 额外的追加注入项 -->
+                
+                
+                    <div class="box search-box">
+                        <a href="/search">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                <div class="box theme-box" id="theme-toggle">
+                    <span class="fa fa-adjust"></span>
+                </div>
+            </div>
+            <div id="gotop-box" class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+
+
+
+    <div id="kr-share-modal" class="kr-modal">
+    <div class="kr-modal-bg" onclick="krCloseShareModal()"></div>
+    <div class="kr-modal-content">
+        <div class="kr-modal-header">
+            <div class="kr-modal-icon">
+                <i class="fa fa-share-alt"></i>
+            </div>
+            <div class="kr-modal-title">分享这一刻</div>
+            <button class="kr-modal-close" onclick="krCloseShareModal()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </div>
+        <div class="kr-modal-body">
+            <div class="kr-share-message">让朋友们也来瞅瞅！</div>
+            <div class="kr-share-qr" id="kr-share-qr"></div>
+            <div class="kr-share-platforms">
+                
+                    <button class="kr-share-platform-button" style="color: #62b6e7;" title="喵窝" onclick="krShareModalOpenPlatform('https://nya.one/share?text=%3E%20$TITLE%0A%3E%0A%3E%20$SUMMARY%0A----%20$SITE%0A%0A$URL')">
+                        <svg fill="currentColor" width="18" height="18" viewBox="0 0 329 388"><path d="M0,36.226c0,-19.993 16.233,-36.226 36.226,-36.226c13.788,0 25.787,7.719 31.908,19.068l188.366,229.845l0,-111.259c-6.356,5.508 -14.645,8.843 -23.707,8.843c-19.994,0 -36.226,-16.232 -36.226,-36.226c-0,-8.551 2.968,-16.413 7.93,-22.613l-0.015,-0.013l56.614,-69.08c6.2,-11.073 18.047,-18.565 31.63,-18.565c19.994,0 36.227,16.233 36.227,36.226l-0,314.644c-0,19.994 -16.233,36.226 -36.227,36.226c-13.166,0 -24.701,-7.039 -31.044,-17.555l-189.229,-230.899l-0,212.228c-0,19.994 -16.233,36.226 -36.227,36.226c-19.993,0 -36.226,-16.232 -36.226,-36.226l0,-314.644Z" /></svg>
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script defer src="/js/kr-modal/share.min.js"></script>
+
+
+
+<!-- 额外的追加注入项 -->
+
+
+        <script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+  <script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+
+
+
+  <script defer src="/vendors/viewerjs@1.11.6/dist/viewer.min.js"></script>
+
+
+<script defer src="/js/kr-core.min.js"></script>
+
+
+  <script defer src="/js/kr-pjax.min.js"></script>
+
+
+<!-- 额外的追加注入项 -->
+
+
+    </body>
+</html>
