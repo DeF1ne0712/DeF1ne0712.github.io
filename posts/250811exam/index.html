@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
+    <script src="/js/canvas-nest.js"></script>
+<head>
   <!-- 元数据 -->
   <meta charset="utf-8">
   
@@ -441,6 +442,10 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
     
         <nav class="navigation post-navigation clearfix" role="navigation">
             
+            <div class="nav-previous clearfix">
+                <a title=" Markdown 渲染测试" href="/posts/test/"><i class="fa fa-angle-left"></i> 上一篇</a>
+            </div>
+            
             
             <div class="nav-next clearfix">
                 <a title=" 2025-08-18 妯℃嫙鑰冭瘯 in Xinyoudui" href="/posts/250818exam/">下一篇 <i class="fa fa-angle-right"></i></a>
@@ -482,7 +487,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                 文章
             </span>
             <span class="count">
-                3
+                4
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -490,7 +495,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                 分类
             </span>
             <span class="count">
-                0
+                1
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -498,7 +503,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                 标签
             </span>
             <span class="count">
-                0
+                9
             </span>
         </a>
     </div>
@@ -519,9 +524,21 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 </aside>
                 
                 
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类列表</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%A0%B8%E5%BF%83%E5%8D%8F%E5%90%8C/">核心协同</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
 
             
                 
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/GFM/" style="font-size: 0.6em;">GFM</a> <a href="/tags/Github/" style="font-size: 0.6em;">Github</a> <a href="/tags/Katex/" style="font-size: 0.6em;">Katex</a> <a href="/tags/Markdown/" style="font-size: 0.6em;">Markdown</a> <a href="/tags/Microsoft/" style="font-size: 0.6em;">Microsoft</a> <a href="/tags/OFM/" style="font-size: 0.6em;">OFM</a> <a href="/tags/Obsidian/" style="font-size: 0.6em;">Obsidian</a> <a href="/tags/Typora/" style="font-size: 0.6em;">Typora</a> <a href="/tags/%E6%BA%90%E7%A0%81%E6%A1%88%E4%BE%8B%E9%A9%B1%E5%8A%A8/" style="font-size: 0.6em;">源码案例驱动</a>
+      </div>
+  </aside>
+
             
                 
   <aside id="krw-posts" class="widget widget-kratos-posts">
@@ -545,6 +562,12 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
           
           
             <a class="list-group-item" href="/posts/250811exam/"><i class="fa fa-book"></i> 2025-08-11 模拟考试 in Xinyoudui</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/test/"><i class="fa fa-book"></i> Markdown 渲染测试</a>
             
           
         
@@ -690,6 +713,21 @@ document.querySelectorAll('pre[class*="language-"]').forEach((block) => {
 </script>
 
 
+<script src="/js/canvas-nest.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof CanvasNest === "undefined") return;
+
+    new CanvasNest(document.body, {
+        color: '0,120,255',
+        pointColor: '0,120,255',
+        opacity: 0.6,
+        count: 80,
+        zIndex: -1
+    });
+});
+</script>
 
         <script>
     if (!window.kr) {

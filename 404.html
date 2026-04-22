@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
+    <script src="/js/canvas-nest.js"></script>
+<head>
   <!-- 元数据 -->
   <meta charset="utf-8">
   
@@ -378,6 +379,21 @@ document.querySelectorAll('pre[class*="language-"]').forEach((block) => {
 </script>
 
 
+<script src="/js/canvas-nest.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof CanvasNest === "undefined") return;
+
+    new CanvasNest(document.body, {
+        color: '0,120,255',
+        pointColor: '0,120,255',
+        opacity: 0.6,
+        count: 80,
+        zIndex: -1
+    });
+});
+</script>
 
         <script>
     if (!window.kr) {
