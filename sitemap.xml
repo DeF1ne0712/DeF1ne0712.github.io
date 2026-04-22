@@ -2,31 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://def1ne0712.github.io/posts/250811exam/</loc>
+    <loc>https://def1ne0712.github.io/posts/me/</loc>
     
-    <lastmod>2026-04-15T15:07:39.371Z</lastmod>
+    <lastmod>2026-04-22</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://def1ne0712.github.io/posts/250818exam/</loc>
     
-    <lastmod>2026-04-15T15:06:01.394Z</lastmod>
+    <lastmod>2026-04-22</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://def1ne0712.github.io/posts/me/</loc>
+    <loc>https://def1ne0712.github.io/posts/250811exam/</loc>
     
-    <lastmod>2026-04-14T14:31:22.021Z</lastmod>
+    <lastmod>2026-04-22</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://def1ne0712.github.io/linklist-example/index.html</loc>
     
-    <lastmod>2026-04-14T13:12:49.586Z</lastmod>
+    <lastmod>2026-04-14</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+  
+
+  <url>
+    <loc>https://def1ne0712.github.io/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
   
 </urlset>

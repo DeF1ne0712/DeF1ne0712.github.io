@@ -1,0 +1,159 @@
+/* ================== 本地字体 ================== */
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans SC";
+  src: url("/fonts/HarmonyOS_Sans_SC_Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* ================== 全局变量（统一） ================== */
+:root {
+  --code-bg: #1e1e1e;
+  --code-topbar: #2d2d2d;
+  --code-text: #d4d4d4;
+  --code-border: #333;
+
+  /* ✅ 关键：中文 fallback */
+  --font-code: "Fira Code", "HarmonyOS Sans SC", monospace;
+  --font-text: "HarmonyOS Sans SC", sans-serif;
+}
+
+/* ================== 正文 ================== */
+body {
+  font-family: var(--font-text);
+}
+
+/* ================== 行内代码 ================== */
+code {
+  font-family: var(--font-code);
+  background: rgba(0,0,0,0.12);
+  padding: 2px 6px;
+  border-radius: 4px;
+
+  font-synthesis: none;
+}
+
+/* ================== 代码块 ================== */
+pre[class*="language-"] {
+  position: relative;
+  margin: 20px 0;
+  padding: 16px;
+  padding-top: 38px;
+
+  background: var(--code-bg);
+  border-radius: 10px;
+  border: 1px solid var(--code-border);
+
+  font-family: var(--font-code);
+  font-size: 14px;
+  line-height: 1.6;
+
+  overflow: auto;
+}
+
+/* VSCode 顶栏 */
+pre[class*="language-"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 100%;
+
+  background: var(--code-topbar);
+  border-radius: 10px 10px 0 0;
+}
+
+/* 代码内容（防止 Prism 覆盖字体） */
+pre[class*="language-"] code {
+  color: var(--code-text);
+  font-family: var(--font-code);
+
+  font-variant-ligatures: contextual;
+  font-synthesis: none;
+}
+
+/* ================== 行号 ================== */
+pre.line-numbers {
+  padding-left: 3.5em;
+}
+
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #333;
+}
+
+.line-numbers-rows > span::before {
+  color: #666;
+}
+
+/* ================== 复制按钮 ================== */
+.code-copy-btn {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+
+  font-family: var(--font-text); /* 中文 UI 用鸿蒙 */
+  font-size: 12px;
+
+  background: #3a3a3a;
+  color: #ddd;
+  border: none;
+  border-radius: 6px;
+
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.code-copy-btn:hover {
+  background: #007acc;
+  color: #fff;
+}
+
+/* ================== 滚动条 ================== */
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ================== Prism VSCode 配色 ================== */
+.token.comment { color: #6a9955; font-style: italic; }
+.token.keyword { color: #569cd6; }
+.token.string { color: #ce9178; }
+.token.number { color: #b5cea8; }
+.token.function { color: #dcdcaa; }
+.token.class-name { color: #4ec9b0; }
+.token.operator { color: #d4d4d4; }
+.token.constant { color: #c586c0; }
+.token.macro { color: #c586c0; }
+.token.boolean { color: #569cd6; }
+.token.punctuation { color: #d4d4d4; }
+
+/* ================== KaTeX（绝对安全区） ================== */
+
+/* ❗不要设置 font-family */
+.katex {
+  font-size: 1.05em;
+}
+
+/* 行外公式 */
+.katex-display {
+  margin: 1.2em 0;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
